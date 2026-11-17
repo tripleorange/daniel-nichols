@@ -1,0 +1,39 @@
+:root{--paper:#fbf8f1;--ink:#201d19;--muted:#6f675c;--rule:#d9d2c5;--link:#4a3f2f}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#15130f;--ink:#e6dfd2;--muted:#9a917f;--rule:#2d2924;--link:#c9bfae}}
+:root[data-theme="dark"]{--paper:#15130f;--ink:#e6dfd2;--muted:#9a917f;--rule:#2d2924;--link:#c9bfae}
+:root[data-theme="light"]{--paper:#fbf8f1;--ink:#201d19;--muted:#6f675c;--rule:#d9d2c5;--link:#4a3f2f}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"EB Garamond",Georgia,"Times New Roman",serif;font-size:1.25rem;line-height:1.55}
+main{max-width:34em;margin:0 auto;padding:1.5rem 16px 5rem}
+a{color:var(--link)}
+.topbar{display:flex;justify-content:space-between;align-items:baseline;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-bottom:.6rem;border-bottom:1px solid var(--rule)}
+.topbar a{color:var(--muted);text-decoration:none}.topbar a:hover{color:var(--ink)}
+.topbar .mode{background:none;border:1px solid var(--rule);color:var(--muted);font:inherit;letter-spacing:.12em;text-transform:uppercase;padding:.15em .6em;border-radius:3px;cursor:pointer}
+.opener{text-align:center;margin:3.5rem 0 2.6rem}
+.chnum{margin:0 0 .6rem;font-size:.85em;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1.chtitle{font-weight:normal;font-style:italic;font-size:1.9em;margin:0;line-height:1.2}
+.text p{margin:0;text-indent:1.4em;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.text p.first{text-indent:0}
+.lead,.sc{font-variant:small-caps;letter-spacing:.05em}
+.text p.scene{text-indent:0;text-align:center;margin:1.1em 0}
+.text p.display{text-indent:0;text-align:center;font-variant:small-caps;letter-spacing:.08em;margin:.6em 0}
+blockquote.letter{margin:.8em 1.4em 1em;font-size:.94em}
+blockquote.letter p{text-indent:0;margin-bottom:.5em;text-align:left}
+nav.pager{display:flex;justify-content:space-between;gap:1rem;margin-top:3.5rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.95rem}
+nav.pager a{text-decoration:none}nav.pager a:hover{text-decoration:underline}
+nav.pager .next{margin-left:auto;text-align:right}
+.titlepage{text-align:center;margin:3rem 0 2.5rem}
+.titlepage img{max-width:min(60vw,260px);height:auto;box-shadow:0 2px 14px rgba(0,0,0,.25);margin-bottom:2rem}
+.tp-title{font-size:1.9em;letter-spacing:.08em;text-transform:uppercase;line-height:1.25;margin:0}
+.tp-rule{margin:1rem 0}.tp-author{font-size:1.05em;letter-spacing:.14em;text-transform:uppercase;margin:0}
+.edition{font-size:.9em;color:var(--muted);text-align:center;margin:1.6rem auto 0;max-width:30em}
+.edition p{margin:0 0 .5em}
+nav.toc h2{text-align:center;font-weight:normal;font-size:1em;letter-spacing:.18em;text-transform:uppercase;margin:3rem 0 1.4rem}
+nav.toc ol{list-style:none;padding:0;margin:0}
+nav.toc li{display:flex;gap:1em;margin:0 0 .45em}
+nav.toc li a{text-decoration:none;color:inherit;display:flex;gap:1em;width:100%}nav.toc li a:hover{text-decoration:underline}
+nav.toc .n{min-width:2em;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+nav.toc li.bm{margin-top:1.2em}
+.matter p{margin:0 0 .8em;text-indent:0;text-align:left}
+footer.note{margin-top:4rem;font-size:.8rem;color:var(--muted);text-align:center}
+@media (max-width:480px){body{font-size:1.12rem}h1.chtitle{font-size:1.6em}}
