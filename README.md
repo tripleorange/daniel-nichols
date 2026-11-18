@@ -30,3 +30,9 @@ With Playwright available, run `node qa/check.cjs`. Set `PLAYWRIGHT_MODULE` to a
 ### Publishing
 
 GitHub Pages serves `main` at `danielnichols.net`. Do not merge/push preview work to `main` until the tested changes are approved for publication. Preserve `CNAME` and domain/email configuration. Verify deployment and both public page URLs after publishing.
+
+### Public fitness calendar preview
+
+`calendar-embed.js` loads the public `https://withmight.com/events` page only after a visitor selects Explore the calendar, and removes it on Close. It does not copy catalog data, pass account credentials, or read personal WithMight records. The source retains its live-data and availability warnings. An always-visible full-calendar link covers blocked frames and JavaScript-disabled browsers. Account saving and registration are handled by the source services, not this author site.
+
+QA (November 18, 2026): internal supported preview, desktop 1331px and 390px frame (375px usable viewport): calendar loads, search yields expected results, zero-match search, close/reopen, and no outer overflow. Observed pre-existing WithMight issue: Clear filters resets fields but results do not refresh until another input/change event. This is in WithMight's `events.mjs` reset handler, not the embedding code. No private record, account login, registration, or payment flow was exercised.
