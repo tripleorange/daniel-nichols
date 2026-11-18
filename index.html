@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Daniel Nichols | Author</title>
-<meta name="description" content="Daniel Nichols is an author, musician and former Navy chaplain. His new novel is A Use for Good Men.">
+<meta name="description" content="Books, apps, music and imagined worlds by Daniel Nichols. Explore Camp Potuk, The Chronicles of Eridul, WithMight and CouplesCheck.">
 <meta name="theme-color" content="#eeebe2">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Daniel Nichols">
-<meta property="og:description" content="Daniel Nichols is an author, musician and former Navy chaplain. His new novel is A Use for Good Men.">
+<meta property="og:description" content="Books, apps, music and imagined worlds by Daniel Nichols. Explore Camp Potuk, The Chronicles of Eridul, WithMight and CouplesCheck.">
 <meta property="og:url" content="https://danielnichols.net/">
 <meta property="og:image" content="https://danielnichols.net/cover-a-use-for-good-men.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -42,13 +42,14 @@ dialog{background:var(--paper);color:var(--ink);border:0;padding:50px;max-width:
 @media(max-width:380px){.film-feature{grid-template-columns:minmax(0,1fr)}.film-visual{padding:28px}.film-title{font-size:40px}.film-copy h2{font-size:40px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
+<link rel="stylesheet" href="refresh.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="header wrap">
   <a class="wordmark" href="#home" aria-label="Daniel Nichols, home"><span class="monogram" aria-hidden="true">dn.</span><span>DANIEL NICHOLS</span></a>
   <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
-  <nav id="navigation" aria-label="Main navigation"><a href="#books">Books</a><a href="#music">Music</a><a href="#film">Film</a><a href="#audio">Audio drama</a><a href="#apps">Apps</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <nav id="navigation" aria-label="Main navigation"><a href="#projects">Start here</a><a href="#books">Books</a><a href="#music">Music</a><a href="#film">Film</a><a href="#audio">Audio drama</a><a href="#apps">Apps</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
 </header>
 
 <main id="main">
@@ -56,8 +57,8 @@ dialog{background:var(--paper);color:var(--ink);border:0;padding:50px;max-width:
     <div class="hero-copy">
       <p class="eyebrow"><span class="dot"></span> AUTHOR · MUSICIAN · STORYTELLER</p>
       <h1 id="hero-title">A life<br>in <em>stories.</em></h1>
-      <p class="hero-intro">I write novels for adults and children and make music, film and audio drama. My new novel, <i>A Use for Good Men</i>, draws on my service as a Navy chaplain with the Marines in Iraq.</p>
-      <a class="button" href="#books">Explore the work <span aria-hidden="true">↓</span></a>
+      <p class="hero-intro">I write novels for adults and children and make music, film and audio drama. I also build tools for everyday life. Find something to read, try, watch or listen to below.</p>
+      <a class="button" href="#projects">Find your next stop <span aria-hidden="true">↓</span></a>
     </div>
     <figure class="portrait">
       <div class="portrait-frame"><img src="author-portrait-2026.jpg" alt="Daniel Nichols" width="720" height="900" fetchpriority="high"></div>
@@ -67,27 +68,45 @@ dialog{background:var(--paper);color:var(--ink);border:0;padding:50px;max-width:
     <div class="hero-bottom"><span>From the page to the screen to your headphones.</span><a href="#about">Meet Daniel <span aria-hidden="true">↗</span></a></div>
   </section>
 
-  <section id="books" class="books-section" aria-labelledby="books-heading">
+  <section class="project-hub wrap" id="projects" aria-labelledby="projects-heading">
+  <div class="hub-heading"><div><p class="eyebrow accent">A FEW WAYS IN</p><h2 id="projects-heading">What brings<br><em>you here?</em></h2></div><p>Stories to get lost in.<br>Tools to put to work.</p></div>
+  <div class="hub-filters" role="group" aria-label="Filter projects" hidden><button type="button" data-filter="all" aria-pressed="true">Everything</button><button type="button" data-filter="apps" aria-pressed="false">Try an app</button><button type="button" data-filter="books" aria-pressed="false">Find a book</button><button type="button" data-filter="media" aria-pressed="false">Watch &amp; listen</button></div>
+  <p class="sr-only" id="filter-status" aria-live="polite"></p>
+  <div class="project-grid">
+    <article class="project-card" data-category="apps"><p class="eyebrow">APP / AVAILABLE</p><h3>WithMight</h3><p>Keep a record of your progress, explore fitness events, and find a challenge worth working toward.</p><a href="https://withmight.com" target="_blank" rel="noopener noreferrer">Explore WithMight <span aria-hidden="true">↗</span></a><small>Public site · personal features need sign-in</small></article>
+    <article class="project-card" data-category="apps"><p class="eyebrow">APP / AVAILABLE</p><h3>CouplesCheck</h3><p>A questionnaire for two, with individual insights and a side-by-side view of where you meet and differ.</p><a href="https://couplescheck.com" target="_blank" rel="noopener noreferrer">Open CouplesCheck <span aria-hidden="true">↗</span></a><small>Opens the app in a new tab</small></article>
+    <article class="project-card confetti-card" data-category="apps"><p class="eyebrow">APP / IN DEVELOPMENT</p><h3>Fit Confetti</h3><p>Outfit feedback with kind humor. A little encouragement, a fresh idea, and no body judgments.</p><a href="#fit-confetti">About the project <span aria-hidden="true">↓</span></a><small>Private prototype · not open for public testing yet</small></article>
+    <article class="project-card camp-card" data-category="books"><p class="eyebrow">BOOK / FORTHCOMING</p><h3>The Secret of<br>Camp Potuk</h3><p>A summer camp. Missing valuables. A creature who cannot quite keep the same shape.</p><a href="camp-potuk.html">Meet Camp Potuk <span aria-hidden="true">→</span></a><small>Middle-grade fantasy mystery · with beta readers</small></article>
+    <article class="project-card" data-category="books"><p class="eyebrow">BOOKS / AVAILABLE NOW</p><h3>Enter Eridul</h3><p>Begin with Charlie Saves Christmas or follow Cassie into a world where art can change much more than a canvas.</p><a href="#eridul-books">Find your book <span aria-hidden="true">↓</span></a><small>Print books and full-cast audio adventures</small></article>
+    <article class="project-card" data-category="books"><p class="eyebrow">ADULT FICTION / MANUSCRIPT</p><h3>A Use for Good Men</h3><p>A former Navy chaplain discovers what a defense contractor wants from the software he built to help veterans.</p><a href="#good-men">Read about the novel <span aria-hidden="true">↓</span></a><small>Literary psychological suspense</small></article>
+    <article class="project-card" data-category="media"><p class="eyebrow">FILM / MUSIC / AUDIO</p><h3>Press play</h3><p>Original songs, full-cast fantasy, films, and a documentary journey toward the bodybuilding stage.</p><div class="hub-media-links"><a href="#music">Music</a><a href="#film">Film</a><a href="#audio">Audio drama</a></div><small>Choose a format and explore</small></article>
+  </div>
+</section>
+<section id="books" class="books-section" aria-labelledby="books-heading">
     <div class="wrap">
       <div class="section-top"><p class="eyebrow">01 / THE WRITTEN WORD</p><span class="small-note">Literary suspense &amp; imagined worlds</span></div>
-      <div class="featured-book">
+      <div class="camp-feature">
+  <a href="camp-potuk.html" class="camp-cover-link"><img src="camp-potuk-cover.jpg" alt="The Secret of Camp Potuk cover by Daniel Nichols" width="750" height="1200" loading="lazy"></a>
+  <div><p class="eyebrow accent">FORTHCOMING / MIDDLE-GRADE FANTASY MYSTERY</p><h2 id="books-heading">The Secret of<br><em>Camp Potuk</em></h2><p>Charlie hoped for a summer with her friend Penny. Then valuables began disappearing, Heron Cabin took the blame, and a frightened creature needed help.</p><p>A new adventure in the world of Eridul, about friendship, belonging, and the trouble with promises.</p><p class="release-note">Currently with human beta readers. Publication details to come.</p><a class="text-link" href="camp-potuk.html">Read the synopsis <span aria-hidden="true">→</span></a></div>
+</div>
+<div class="featured-book" id="good-men">
         <div class="novel-art"><img class="novel-cover" src="cover-a-use-for-good-men.jpg" alt="Cover of A Use for Good Men, a novel by Daniel Nichols" width="720" height="1113"></div>
         <div class="featured-copy">
-          <p class="eyebrow accent">LITERARY PSYCHOLOGICAL SUSPENSE</p>
-          <h2 id="books-heading">A Use for<br><em>Good Men</em></h2>
+          <p class="eyebrow accent">A NEW MANUSCRIPT / LITERARY PSYCHOLOGICAL SUSPENSE</p>
+          <h2>A Use for<br><em>Good Men</em></h2>
           <p>In 2003, Sam Artell was a Navy chaplain with the Marines in Iraq, the man they found when they needed someone to hear what they could tell no one else.</p>
           <p>Nineteen years later, a defense contractor wants the software he built to help veterans find work, and the executive behind the deal was waiting at the end of the worst road of Sam’s war.</p>
           <button class="text-link" data-dialog="novel-dialog">Read the full description <span aria-hidden="true">↗</span></button>
         </div>
       </div>
-      <div class="books-subheading"><h3>Elsewhere, a little more magic.</h3><span>THE CHRONICLES OF ERIDUL</span></div>
+      <div class="books-subheading" id="eridul-books"><h3>Elsewhere, a little more magic.</h3><span>THE CHRONICLES OF ERIDUL</span></div>
       <div class="book-grid">
         <article class="published-book">
-          <a class="book-image charlie" href="https://goodhamproductions.com/product/charlie-saves-christmas-a-prelude-to-the-chronicles-of-eridul/" target="_blank" rel="noopener noreferrer"><img src="charlie-cover.jpg" alt="Charlie Saves Christmas book cover" width="300" height="450"></a>
+          <a class="book-image charlie" href="https://goodhamproductions.com/product/charlie-saves-christmas-a-prelude-to-the-chronicles-of-eridul/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="charlie-cover.jpg" alt="Charlie Saves Christmas book cover" width="300" height="450"></a>
           <div><p class="eyebrow">A PRELUDE TO ERIDUL</p><h3>Charlie Saves<br>Christmas</h3><p>An eleven-year-old girl finds herself in a world of perpetual twilight, where her arrival could change everything.</p><a class="text-link" href="https://goodhamproductions.com/product/charlie-saves-christmas-a-prelude-to-the-chronicles-of-eridul/" target="_blank" rel="noopener noreferrer">Discover the book <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="published-book">
-          <a class="book-image cassie" href="https://goodhamproductions.com/product/cassie-and-the-spectral-shade-book-one-in-the-chronicles-of-eridul/" target="_blank" rel="noopener noreferrer"><img src="cassie-cover.jpg" alt="Cassie and the Spectral Shade book cover" width="300" height="450"></a>
+          <a class="book-image cassie" href="https://goodhamproductions.com/product/cassie-and-the-spectral-shade-book-one-in-the-chronicles-of-eridul/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="cassie-cover.jpg" alt="Cassie and the Spectral Shade book cover" width="300" height="450"></a>
           <div><p class="eyebrow">THE CHRONICLES OF ERIDUL · BOOK ONE</p><h3>Cassie and<br>the Spectral Shade</h3><p>A scholarship to an elite arts school draws Cassie into a mystery where her talent can open the way between worlds.</p><a class="text-link" href="https://goodhamproductions.com/product/cassie-and-the-spectral-shade-book-one-in-the-chronicles-of-eridul/" target="_blank" rel="noopener noreferrer">Discover the book <span aria-hidden="true">↗</span></a></div>
         </article>
       </div>
@@ -162,15 +181,15 @@ dialog{background:var(--paper);color:var(--ink);border:0;padding:50px;max-width:
   </section>
 
   <section class="apps-section wrap" id="apps" aria-labelledby="apps-heading">
-    <div class="section-top"><p class="eyebrow">05 / NOW BUILDING</p><span class="small-note">Apps for health &amp; relationships</span></div>
-    <div class="section-heading"><h2 id="apps-heading">Tools for the<br><em>long work.</em></h2><p>Two apps about the slow, honest work<br>of getting stronger and staying close.</p></div>
+    <div class="section-top"><p class="eyebrow">05 / NOW BUILDING</p><span class="small-note">Health, relationships &amp; a little joy</span></div>
+    <div class="section-heading"><h2 id="apps-heading">Things to<br><em>try.</em></h2><p>Practical tools, and a playful work in progress.<br>Each one has its own place to begin.</p></div>
     <div class="app-grid">
       <article class="app-card">
         <a class="app-plate app-plate--might" href="https://withmight.com" target="_blank" rel="noopener noreferrer" aria-label="Visit WithMight"><span class="app-domain">withmight.com</span><span class="app-wordmark">WithMight</span><span class="app-motto">Discover what your body is capable of.</span><span class="app-arrow" aria-hidden="true">↗</span></a>
         <div class="app-copy">
           <p class="eyebrow accent">PHYSICAL PROGRESS</p>
           <p>A private, evidence-first record for physical goals. Log progress in conversation, follow the trend instead of one noisy day, and see what the work makes possible.</p>
-          <a class="text-link" href="https://withmight.com" target="_blank" rel="noopener noreferrer">Visit WithMight <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://withmight.com" target="_blank" rel="noopener noreferrer">Open WithMight <span aria-hidden="true">↗</span></a>
         </div>
       </article>
       <article class="app-card">
@@ -178,10 +197,12 @@ dialog{background:var(--paper);color:var(--ink);border:0;padding:50px;max-width:
         <div class="app-copy">
           <p class="eyebrow accent">RELATIONSHIPS</p>
           <p>Each partner answers a foundational questionnaire on their own. CouplesCheck returns individual scores and insights, plus a side-by-side comparison to help you understand each other.</p>
-          <a class="text-link" href="https://couplescheck.com" target="_blank" rel="noopener noreferrer">Visit CouplesCheck <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://couplescheck.com" target="_blank" rel="noopener noreferrer">Open CouplesCheck <span aria-hidden="true">↗</span></a>
         </div>
       </article>
+        <article class="app-card" id="fit-confetti"><div class="app-plate app-plate--confetti"><span class="app-domain">PRIVATE PROTOTYPE</span><span class="app-wordmark">Fit Confetti</span><span class="app-motto">A little joy in getting dressed.</span></div><div class="app-copy"><p class="eyebrow">IN DEVELOPMENT</p><p>Playful outfit feedback, kind humor, and styling ideas focused on clothes, not bodies. Public testing is not open yet.</p><a class="text-link" href="mailto:daniel@danielnichols.net?subject=Fit%20Confetti%20testing">Ask about testing <span aria-hidden="true">↗</span></a></div></article>
     </div>
+      <div class="app-next"><p>Looking for a low-commitment way to explore WithMight?</p><a class="text-link" href="https://withmight.com/events.html" target="_blank" rel="noopener noreferrer">Browse public fitness events <span aria-hidden="true">↗</span></a></div>
   </section>
 
   <section class="about-section wrap" id="about" aria-labelledby="about-heading">
@@ -189,7 +210,7 @@ dialog{background:var(--paper);color:var(--ink);border:0;padding:50px;max-width:
     <div class="about-copy">
       <p class="large-copy">Author, musician, former Navy chaplain.<br>Always a storyteller.</p>
       <p>I served as a Navy chaplain with the Marines in Iraq in 2003. Since then I’ve written novels for adults and children, recorded music, executive produced a film and created audio drama with Good Ham Productions.</p>
-      <p>I started HappyGoLukky with my family and co-founded Good Ham Productions. These days I’m also building WithMight and CouplesCheck.</p>
+      <p>I started HappyGoLukky with my family and co-founded Good Ham Productions. These days I’m also building WithMight, CouplesCheck and Fit Confetti.</p>
       <dl class="credits">
         <div><dt>Awards</dt><dd>Best Director, 2021 New Jersey WebFest, for <i>HappyGoLukky</i>, which also won Outstanding Fantasy</dd></div>
         <div><dt>Service</dt><dd>Navy Reserve chaplain for more than sixteen years</dd></div>
@@ -230,6 +251,9 @@ dialog{background:var(--paper);color:var(--ink);border:0;padding:50px;max-width:
 
 <script>
 (function(){
+
+  var filters=document.querySelector('.hub-filters');
+  if(filters){filters.hidden=false;filters.querySelectorAll('button').forEach(function(button){button.addEventListener('click',function(){var category=button.dataset.filter;var count=0;filters.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(b===button));});document.querySelectorAll('.project-card').forEach(function(card){card.hidden=category!=='all'&&card.dataset.category!==category;if(!card.hidden)count++;});document.getElementById('filter-status').textContent=count+' projects shown';});});}
   var menu=document.querySelector('.menu-toggle');
   var navigation=document.getElementById('navigation');
   function setMenu(open){menu.setAttribute('aria-expanded',String(open));navigation.classList.toggle('is-open',open);menu.querySelector('span').textContent=open?'−':'+';}
