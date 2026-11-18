@@ -7,3 +7,5 @@
 
 .project-card[data-category="media"]{grid-column:1/-1;min-height:200px}.project-card[data-category="media"]>p:not(.eyebrow){max-width:700px}
 @media(min-width:901px){.app-wordmark{font-size:clamp(28px,2.7vw,38px)}}
+
+.reserve-copy{margin-top:28px}.reserve-button{display:inline-flex;align-items:center;gap:18px;min-height:48px;padding:12px 22px;background:#334d37;color:#fff;text-decoration:none;font-size:14px;line-height:1.5;border:1px solid #334d37}.reserve-button:hover{background:#233726}.reserve-button:focus-visible{outline:3px solid #a3292a;outline-offset:4px}.camp-feature .reserve-note,.camp-page .reserve-note{font-size:12px!important;line-height:1.7;color:var(--muted);margin:12px 0 0;max-width:440px}
