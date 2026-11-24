@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /read/
 Allow: /
 Sitemap: https://danielnichols.net/sitemap.xml
