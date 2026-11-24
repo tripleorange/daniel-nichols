@@ -39,4 +39,6 @@ QA (November 18, 2026): internal supported preview, desktop 1331px and 390px fra
 
 ## Beta reader (password-protected)
 
+`read/index.html` is a small unlisted landing page that lists the books currently open for beta readers, with a link to each reader; it holds no text from the books and no password. Add a book there when its reader goes up and remove it when the round closes.
+
 `read/a-use-for-good-men/index.html` and `read/the-secret-of-camp-potuk/index.html` are the beta readers' editions of the two books for invited readers. Each page holds only a lock screen and the encrypted book (AES-256-GCM, opened in the browser with the readers' password); the text itself is never committed to this repository. It is not linked from the site, carries `noindex`, and `robots.txt` excludes `/read/`. The page is generated outside this repository from the manuscript; do not edit it by hand, and never commit the password or a readable copy of the book.
